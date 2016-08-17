@@ -10,7 +10,7 @@ import {routing} from "./contact.routing";
 @NgModule({
   imports: [CommonModule, FormsModule, routing],
   declarations: [ContactComponent, HighlightDirective, AwesomePipe],
-  exports: [ContactComponent],
+  //exports: [ContactComponent],
   providers: [ContactService]
 })
 export class ContactModule {

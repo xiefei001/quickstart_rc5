@@ -1,0 +1,10 @@
+import {Directive, Renderer, ElementRef} from "@angular/core";
+@Directive({
+  selector: '[highlight], input'
+})
+export class HighlightDirective {
+  constructor(renderer: Renderer, el: ElementRef) {
+    renderer.setElementStyle(el.nativeElement, 'backgrounColor', 'lightgray');
+    console.log(`* shared highlight called for ${el.nativeElement.tagName}`);
+  }
+}
